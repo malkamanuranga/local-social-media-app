@@ -1,9 +1,11 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d6efd,100:326ce5&height=200&section=header&text=Local%20Social%20Media&fontSize=50&fontAlignY=35&desc=Flask%20%7C%20Docker%20%7C%20Jenkins%20%7C%20Kubernetes&descAlignY=55&descSize=20&fontColor=ffffff" width="100%" />
-
 <div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:00f2fe,100:4facfe&height=200&section=header&text=Local%20Social%20Media&fontSize=50&fontAlignY=35&desc=Flask%20%7C%20Docker%20%7C%20Jenkins%20%7C%20Kubernetes&descAlignY=55&descSize=20&fontColor=ffffff" width="100%" />
+
+<br>
+
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=0D6EFD&center=true&vCenter=true&width=600&lines=Welcome+to+my+Social+Media+App!;Built+with+Flask+%2B+Docker;Deployed+via+Jenkins+%2B+Kubernetes;Help+Me+Improve+This+App!;Star+%26+Follow+me!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&weight=600&size=24&pause=1000&color=00F2FE&center=true&vCenter=true&width=600&lines=Welcome+to+my+Social+Media+App!;Dockerized+%2B+Jenkins+CI%2FCD;Deployed+on+Kubernetes;Let's+Improve+This+App+Together;Star+%26+Follow+Me!" alt="Typing SVG" />
 </a>
 
 <br><br>
@@ -14,7 +16,7 @@
 [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
 [![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)](https://www.jenkins.io/)
 
-<br>
+<br><br>
 
 **A modern, fully automated Local CI/CD Pipeline Project.**
 
@@ -22,7 +24,7 @@
 
 ---
 
-## 🚀 About This Project
+## 🚀 About This Project & How You Can Help!
 
 This is a small **Flask-based social media application** that serves as the foundation for a fully automated, local CI/CD pipeline. It features user authentication, post creation, likes, and comments. 
 
@@ -30,9 +32,9 @@ This is a small **Flask-based social media application** that serves as the foun
 
 ### 🤝 Help Me Improve This App!
 I would love your help to improve:
-*   **App Basics:** Adding profiles, follower systems, image uploads, or chat.
-*   **Docker & Kubernetes:** Optimizing the images, adding Helm charts, or improving scaling.
-*   **Jenkins:** Adding automated integration tests, code quality checks (SonarQube), or security scans.
+*   **App Basics:** Adding profiles, follower systems, image uploads, or chat features.
+*   **Docker & Kubernetes:** Optimizing images, adding Helm charts, or improving scaling.
+*   **Jenkins:** Adding automated tests, code quality checks (SonarQube), or security scans.
 
 If you have knowledge in any of these areas, **please fork the repo and submit a Pull Request!** 
 
@@ -65,3 +67,13 @@ You can pull the latest image directly from Docker Hub and run it:
 ```bash
 docker pull malkamanuranga/local-social-media-app:latest
 docker run -d -p 5000:5000 malkamanuranga/local-social-media-app:latest
+Option 2: Run Locally with Docker Compose
+Clone the repo and spin it up locally:
+
+bash
+git clone https://github.com/malkamanuranga/local-social-media-app.git
+cd local-social-media-app
+docker compose up -d --build
+Access the application in your browser at http://localhost:5000 or via Kubernetes at http://localhost:30081.
+
+<div align="center"> <i>Built with ❤️ for learning DevOps, CI/CD, Docker, and Kubernetes.</i> </div><img src="https://capsule-render.vercel.app/api?type=venom&color=0:00f2fe,100:4facfe&height=100&section=footer&text=Happy%20Coding!&fontSize=24&fontAlignY=50&fontColor=ffffff" width="100%" /> ```
