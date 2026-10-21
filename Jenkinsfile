@@ -2,6 +2,8 @@ pipeline {
     agent any
 
     environment {
+
+        DOCKER_HUB_USER = 'malkamanuranga'
         IMAGE_NAME     = "local-social-media-app"
         CONTAINER_NAME = "social-app"
         APP_PORT       = "5000"
