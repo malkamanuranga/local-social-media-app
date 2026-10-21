@@ -1,17 +1,22 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d6efd,100:326ce5&height=200&section=header&text=Local%20Social%20Media&fontSize=50&fontAlignY=35&desc=Flask%20%7C%20Docker%20%7C%20Jenkins%20%7C%20Kubernetes&descAlignY=55&descSize=20&fontColor=ffffff" width="100%" />
+
 <div align="center">
 
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=0D6EFD&center=true&vCenter=true&width=600&lines=Welcome+to+Local+Social+Media+App!;Built+with+Flask+%2B+Docker;Deployed+via+Jenkins+%2B+Kubernetes;Help+Me+Improve+This+App!;Star+%26+Follow+on+GitHub!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=0D6EFD&center=true&vCenter=true&width=600&lines=Welcome+to+my+Social+Media+App!;Built+with+Flask+%2B+Docker;Deployed+via+Jenkins+%2B+Kubernetes;Help+Me+Improve+This+App!;Star+%26+Follow+me!" alt="Typing SVG" />
 </a>
 
 <br><br>
 
-<!-- Tech Stack Badges -->
-![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-3.0-000000?style=for-the-badge&logo=flask&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-3.0-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
+[![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)](https://www.jenkins.io/)
+
+<br>
+
+**A modern, fully automated Local CI/CD Pipeline Project.**
 
 </div>
 
@@ -19,29 +24,43 @@
 
 ## 🚀 About This Project
 
-This is a small **Flask-based social media application** that serves as the foundation for a fully automated, local CI/CD pipeline. 
+This is a small **Flask-based social media application** that serves as the foundation for a fully automated, local CI/CD pipeline. It features user authentication, post creation, likes, and comments. 
 
-**We have to build this app more!** It currently has basic features (Login, Posting, Liking, Commenting), but it is a starting point. 
+**We have to build this app more!** It is an evolving project, and I am actively looking for contributors to help me expand the basic features of the application, as well as improve the DevOps pipeline.
 
-### 🤝 Can you help me to improve this?
-I am actively looking for contributors to help me improve the basic features of this app, as well as expand the DevOps side. Whether you want to add a new UI page, fix a bug, or improve the **Docker, Kubernetes, or Jenkins** setup, your help is welcome!
+### 🤝 Help Me Improve This App!
+I would love your help to improve:
+*   **App Basics:** Adding profiles, follower systems, image uploads, or chat.
+*   **Docker & Kubernetes:** Optimizing the images, adding Helm charts, or improving scaling.
+*   **Jenkins:** Adding automated integration tests, code quality checks (SonarQube), or security scans.
 
-**🔗 GitHub Repository:** 
-👉 **[https://github.com/malkamanuranga/local-social-media-app](https://github.com/malkamanuranga/local-social-media-app)**
+If you have knowledge in any of these areas, **please fork the repo and submit a Pull Request!** 
+
+**🔗 Repository Link:** [https://github.com/malkamanuranga/local-social-media-app](https://github.com/malkamanuranga/local-social-media-app)
 
 ---
 
 ## ⭐ Show Your Support!
-
 If you find this project interesting or helpful for learning DevOps:
-1. Please give this repository a **Star ⭐** on GitHub!
-2. **Follow me** ([@malkamanuranga](https://github.com/malkamanuranga)) on GitHub for more projects covering Docker, Kubernetes, and Jenkins!
+1. Please give this repository a **Star ⭐**! It means a lot.
+2. **Follow me** ([@malkamanuranga](https://github.com/malkamanuranga)) on GitHub to follow my journey and see more projects covering Docker, Kubernetes, and Jenkins!
 
 ---
 
-## 🐳 How to Run this Image (Docker Hub)
+## 🏗️ CI/CD Architecture
 
-You can pull and run this Docker image directly on your machine without needing the source code:
+When code is pushed to this repository, the following automated pipeline runs:
+1. **Jenkins** detects the push (via SCM Polling) and starts the pipeline.
+2. **Docker** builds a new image and runs a smoke test.
+3. **Docker Hub** stores the verified image securely.
+4. **Kubernetes** performs a zero-downtime rolling update to deploy the new version.
+
+---
+
+## 🐳 How to Run This App
+
+### Option 1: Run with Docker Hub (Fastest)
+You can pull the latest image directly from Docker Hub and run it:
 
 ```bash
 docker pull malkamanuranga/local-social-media-app:latest
