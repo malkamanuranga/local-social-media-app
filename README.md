@@ -76,4 +76,5 @@ cd local-social-media-app
 docker compose up -d --build
 Access the application in your browser at http://localhost:5000 or via Kubernetes at http://localhost:30081.
 
-<div align="center"> <i>Built with ❤️ for learning DevOps, CI/CD, Docker, and Kubernetes.</i> </div><img src="https://capsule-render.vercel.app/api?type=venom&color=0:00f2fe,100:4facfe&height=100&section=footer&text=Happy%20Coding!&fontSize=24&fontAlignY=50&fontColor=ffffff" width="100%" /> ```
+ ```
+<div align="center"> <i>Built with ❤️ for learning DevOps, CI/CD, Docker, and Kubernetes.</i> </div><img src="https://capsule-render.vercel.app/api?type=venom&color=0:00f2fe,100:4facfe&height=100&section=footer&text=Happy%20Coding!&fontSize=24&fontAlignY=50&fontColor=ffffff" width="100%" />
